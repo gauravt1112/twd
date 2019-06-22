@@ -50,9 +50,168 @@
 	<script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
 <![endif]-->
 
+		
+		<style>
+/* General button style (reset) */
+.btni {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btni:hover{
+background: #fc5979;
+ }
+
+/* Filled star */
+.icon-truck:before {
+	content: url('img/car1.png');
+}
+/*====================================================================================================================*/
+/* Button 7 */
+.btni-7 {
+	background-color: #ff3369;
+	color: #ffffff;
+	border: 1px;
+	letter-spacing: 2px;
+	padding: 15px 20px 15px 20px;
+	font-family: 'ceragr-bolduploaded_file';
+	margin-left: -25%;
+}
+
+/* Button 7a */
+.btni-7a {
+	overflow: hidden;
+	width: 70%;
+}
+
+.btni-7a:before {
+	position: absolute;
+	left: -73px;
+    width: 50%;
+	font-size: 160%;
+	line-height: 0.8;
+	color:#711E04;
+}
+
+.btni-7a.btni-activated {
+	-webkit-animation: fadeOutText 1s;
+	-moz-animation: fadeOutText 1s;
+	animation: fadeOutText 1s;
+}
+
+.btni-7a.btni-activated:before {
+	-webkit-animation: moveToRight 1s;
+	-moz-animation: moveToRight 1s;
+	animation: moveToRight 1s;
+}
+
+@-webkit-keyframes fadeOutText {
+	0% { color: transparent; }
+	80% { color: transparent; }
+	100% { color: #fff; }
+}
+
+@-moz-keyframes fadeOutText {
+	0% { color: transparent; }
+	80% { color: transparent; }
+	100% { color: #fff; }
+}
+
+@keyframes fadeOutText {
+	0% { color: transparent; }
+	80% { color: transparent; }
+	100% { color: #fff; }
+}
+
+@-webkit-keyframes moveToRight {
+	80% { -webkit-transform: translateX(250%); }
+	81% { opacity: 1; -webkit-transform: translateX(250%); }
+	82% { opacity: 0; -webkit-transform: translateX(250%); }
+	83% { opacity: 0; -webkit-transform: translateX(-50%); }
+	84% { opacity: 1; -webkit-transform: translateX(-50%);  }
+	100% { -webkit-transform: translateX(0%); }
+}
+
+@-moz-keyframes moveToRight {
+	80% { -moz-transform: translateX(250%); }
+	81% { opacity: 1; -moz-transform: translateX(250%); }
+	82% { opacity: 0; -moz-transform: translateX(250%); }
+	83% { opacity: 0; -moz-transform: translateX(-50%); }
+	84% { opacity: 1; -moz-transform: translateX(-50%);  }
+	100% { -moz-transform: translateX(0%); }
+}
+
+@keyframes moveToRight {
+	80% { transform: translateX(250%); }
+	81% { opacity: 1; transform: translateX(250%); }
+	82% { opacity: 0; transform: translateX(250%); }
+	83% { opacity: 0; transform: translateX(-50%); }
+	84% { opacity: 1; transform: translateX(-50%);  }
+	100% { transform: translateX(0%); }
+}
+
+</style>
+<style>/*image style*/
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0,0,0,0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color:white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+</style>
 	</head>
 	<body>
-    
 		<div id="st-container" class="st-container">
 		
 			<!--[if lt IE 8]>
@@ -87,61 +246,61 @@
 
 <nav class="st-menu st-effect-1" id="sidebar-nav">
 
-	<div class="icon icon-lab" style="color: #ffffff; font-size: 30px; margin-left:10px; margin-bottom:20px; font-family: 'ceragr-blackuploaded_file';"><a href="index.php"><img src="img/Logo.png"></a> <span id="hide" style="cursor:pointer; position: absolute; margin-top: 8px; right: 135px;"><img src="img/back-nav-arrow.png"> </span></div>
+	<div class="icon icon-lab" style="color: #ffffff; font-size: 30px; margin-left:10px; margin-bottom:20px; font-family: 'ceragr-blackuploaded_file';"><a href="index.html"><img src="img/Logo.png"></a> <span id="hide" style="cursor:pointer; position: absolute; margin-top: 8px; right: 135px;"><img src="img/back-nav-arrow.png"> </span></div>
 
 	<ul>
 	
-		<li><a class="icon icon-data" href="about-us.php">
+		<li><a class="icon icon-data" href="about-us.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>A</span>BOUT <span>U</span>S</span>
 			</a></li>
 		
-		<li><a class="icon icon-data" href="wsp.php">
+		<li><a class="icon icon-data" href="wsp.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>W</span>HO <span>S</span>HOULD <span>P</span>ARTICIPATE</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="wsyk.php">
+			<li><a class="icon icon-data" href="wsyk.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>W</span>HAT <span>Y</span>OU <span>S</span>HOULD</span><span> K</span>NOW
 			</a></li>
 			
-			<li><a class="icon icon-data" href="registration-form.php">
+			<li><a class="icon icon-data" href="registration-form.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>R</span>EGISTER NOW</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="fees.php">
+		<li><a class="icon icon-data" href="fees.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span">F</span>EES <span>A</span>ND<span> I</span>NCLUSIONS</span>
 			</a></li>
 	
-		<li><a class="icon icon-data" href="rules-and-regulation.php">
+		<li><a class="icon icon-data" href="rules-and-regulation.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>R</span>ULES <span>A</span>ND <span>R</span>EGULATIONS</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="what-you-win.php">
+			<li><a class="icon icon-data" href="what-you-win.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>WHAT</span> YOU <span>W</span>IN</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="leader-board.php">
+			<li><a class="icon icon-data" href="leader-board.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>L</span>EADER <span>B</span>OARD</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="csr-partners.php">
+		<li><a class="icon icon-data" href="csr-partners.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>C</span>SR <span>P</span>ARTNERSHIP</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="our_sponser.php">
+		<li><a class="icon icon-data" href="our_sponser.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>O</span>UR <span>S</span>PONSORS</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="our-partners.php">
+			<li><a class="icon icon-data" href="our-partners.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>O</span>UR <span>P</span>ARTNERS</span>
 			</a></li>
 			
 			
 			
-			<li><a class="icon icon-data" href="contact-us.php">
+			<li><a class="icon icon-data" href="contact-us.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>C</span>ONTACT <span>U</span>S</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="faq.php">
+		<li><a class="icon icon-data" href="faq.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>FAQ'S</span></span>
 			</a></li>
 	</ul>
@@ -160,7 +319,7 @@
 
 			
 			<div class="st-content" style="background-color: #ffffff;">
-				<div class="st-content-inner-thank-you">
+				<div class="st-content-inner">
 					<style>
 	.social-header-in{
 		position: absolute;
@@ -184,7 +343,7 @@
 			<div class="logo-inner-container">
 				<div class="logo">
 				
-					<a href="index.php"> <span style="color: #ffffff;font-family: 'ceragr-blackuploaded_file';"><img src="img/Logo.png"></span></a>
+					<a href="index.html"> <span style="color: #ffffff;font-family: 'ceragr-blackuploaded_file';"><img src="img/Logo.png"></span></a>
 					<div id="st-trigger-effects">
 						<button data-effect="st-effect-1" class="btn-hamb" style="color: #ffffff;"><img src="img/hamburger.png" style="width: 60%;"> </button>					
 					</div>
@@ -228,42 +387,105 @@
 <!--==========================================================================
 	Body Start
 	========================================================================== -->
-	<div class="container-fluid" style="background-color: #fc5979; padding-bottom: 20px; padding-top: 50px;">
+		<div class="container-fluid" style="background-color: #fc5979; padding-bottom: 20px; padding-top: 50px;">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<div class="about-heading"><span class="about-nav-text"><span style="font-weight: bolder;">T</span>HANK <span style="font-weight: bolder;">Y</span>OU</span></div>
+					<div class="about-heading"><span class="about-nav-text"><span style="font-weight: bolder;">A</span>BOUT <span style="font-weight: bolder;">U</span>S</span></div>
 					
 					<div class="about-divider"></div>
 					
 				</div>
 			</div>
 		</div>
-			
-			
-				<div style="width: 60%; margin-left: 20%;">
-				<div class="thank-you-line">Your form has been successfully submitted.<br>
-Below is your unique URL for voting system.</div>
-	
-		<img src="http://placehold.it/150x150">&nbsp; &nbsp;<a href="#" class="lorem-cover" style="margin-top:20px;">www.loremipsum.com</a>
-		
-		<br/><br/><br/>
-		
-		<div class="sof-btn">
-		<div style="margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    color: #6D6E71;">Share your url on social media</div>
-		<br>
-			<input type="button" value="Share on Facebook" style="margin-right: 25px;  margin-top: 25px;  padding: 10px 10px 10px 10px;   background: #3C5899;   color: #fff;    border: 2px solid #3C5899;"> </button>
-			<input type="button" value="Share on Twitter" style="margin-right: 25px;  margin-top: 25px;  padding: 10px 10px 10px 10px;   background: #28A9E0;   color: #fff;    border: 2px solid #28A9E0;"> </button>
-		</div>
-		
-		<div style="margin-top:50px;"><a href="#"><input class="button-style2" type="button" value="BACK"></a></div>
-		
-		
+		<div class="about-img-main">
+		<p class="about-img-wrap wow fadeInUp">
+						<span style="font-size: 18px;">For the past six years, we have been driven by our love for TSD rallies. The journey that commenced in 2009 has only grown in strength and vigour.</span>
+					</p>
+	<p class="about-img-wrap-inner wow fadeInUp" data-wow-duration="1s">
+						It all started with 150 cars from Mumbai, driven exclusively by women all the way to Lavasa. In 2011, we integrated the city of Pune – bringing the tally to 2000 women across both cities, and even endeavouring and winning the Guinness Book of World Records in 2014 for the largest number of women participating in a motorsport event.
+					</p>
+	<p class="about-img-wrap-inner wow fadeInUp" data-wow-duration="1s">
+					But as Mia Hamm had once said, "Celebrate what you have accomplished, but raise the bar a little higher each time you succeed." Well, it stands true for us too – we have been pushing ourselves inch-by-inch for the past six years and now, after becoming the world champions, it’s time for us to change the benchmark - go the distance!
+					</p>
+	<p class="about-img-wrap-inner-different wow fadeInUp" data-wow-duration="1s">
+						Welcome to the 7th edition of the Women’s Drive, this year Times Women’s Drive introduces an incipient city, Bangalore and challenges all you super ladies to take on one of the toughest TSD rallies in the world. We drive to GOA! 
+					</p>
+	<p class="about-img-wrap-inner-different wow fadeInUp" data-wow-duration="1s">
+						It’s not a drive for the faint hearted but the rewards are far more compelling. It’s a stamp of achievement for you, which will never ever fade away.
+					</p>
 					</div>
 					
+	
+		
+		<div class="container-fluid about-img-container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 about-img hidden-xs">
+				<!--<img src="img/1.jpg" class="img-responsive">-->			
+	
+			<img src="img/About-1.jpg" class="img-responsive "/> 
+			
+			<div class="hvr-radial-out" style="position: absolute; left:0;top:0;width:100%;height:100%;"></div>
+		
+		
+		</div>					
+				
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 about-img">
+				
+		<img src="img/About-2.jpg" class="img-responsive">
+		
+		<div class="hvr-radial-out" style="position: absolute; left:0;top:0;width:100%;height:100%;"></div>
+		
 					
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid wow fadeInUp" data-wow-duration="1s">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-1 overlay-section">
+					<h2 class="overlay-head">A sneak peak into our gallery</h2>
+					<a href="image-gallary.html"> <input class="button-style" type="button" value="PREVIOUS EDITIONS"></input></a>
+					<p class="about-overlay-text wow fadeIn" data-wow-duration="1s">The drive upgrades in every aspect, flagging off close to International Women’s Day this year, we’re adding satellite tracking for all the participants’ cars, mapping their routes and speed.</p>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="container-fluid">
+			<div class="row" style="width: 60%; margin: 0 auto; padding-bottom: 50px;">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 guiness-img wow fadeInLeft" data-wow-duration="1s">
+					<img src="img/Guiness.jpg" class="img-responsive">
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 limca-img wow fadeInUp" data-wow-duration="1s">
+					<img src="img/Limca-Book.jpg" class="img-responsive">
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 inma-img wow fadeInRight" data-wow-duration="1s">
+					<img src="img/INMA.jpg" class="img-responsive">
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="gbor-para wow fadeInUp" data-wow-duration="1s">
+			Having been felicitated by the Guinness Book of World Records, the Limca Book of Records, the INMA Awards, this year, yet again, we're creating an experience like no other for the participants.
+		</div>
+		
+
+	<div class="about-last-line">
+	<div class="review wow fadeInUp" data-wow-duration="1s">
+			SO GET CHARGED, WE’RE LOOKING FORWARD TO YOUR REVVING ENGINES!
+		</div>
+		<div class="review2 wow fadeInUp" data-wow-duration="1s">
+			What are you waiting for? Click the registration button NOW!
+		</div>
+		<div class="wsp-button" id="btni-click">
+		<a href="registration-form.html">  
+<button style="width: 200px;" class="btni btni-7 btni-7a icon-truck wow fadeInUp" data-wow-duration="1s">REGISTER NOW</button>	</a>				
+			</div>
+	</div>
 <!--==========================================================================
 	End Body
 	========================================================================== -->						
@@ -290,7 +512,7 @@ Below is your unique URL for voting system.</div>
 			
 			<div class="footer-links" style="width:100%;">
 			
-				<a href="about-us.php" class="about-active">ABOUT US</a> <a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><a href="registration-form.php" class="license-active">REGISTER NOW</a><a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><a href="rules-and-regulation.php" class="career-active">RULES & REGULATIONS</a><a href="what-you-win.php" class="process-active">WHAT YOU WIN</a><a href="leader-board.php" class="contact-active">LEADER BOARD</a><a href="csr-partners.php" class="supersox-active">CSR PARTNERSHIP</a><a href="our_sponser.php" class="supersox-active">OUR SPONSORS</a><a href="our-partners.php" class="supersox-active">OUR PARTNERS</a><a href="contact-us.php" class="supersox-active">CONTACT US</a><a href="faq.php" class="supersox-active">FAQ'S</a>
+				<a href="about-us.html" class="about-active">ABOUT US</a> <a href="wsp.html" class="product-active">WHO SHOULD PARTICIPATE</a><a href="wsyk.html" class="quality-active">WHAT YOU SHOULD KNOW</a><a href="registration-form.html" class="license-active">REGISTER NOW</a><a href="fees.html" class="media-active">FEES AND INCLUSIONS</a><a href="rules-and-regulation.html" class="career-active">RULES & REGULATIONS</a><a href="what-you-win.html" class="process-active">WHAT YOU WIN</a><a href="leader-board.html" class="contact-active">LEADER BOARD</a><a href="csr-partners.html" class="supersox-active">CSR PARTNERSHIP</a><a href="our_sponser.html" class="supersox-active">OUR SPONSORS</a><a href="our-partners.html" class="supersox-active">OUR PARTNERS</a><a href="contact-us.html" class="supersox-active">CONTACT US</a><a href="faq.html" class="supersox-active">FAQ'S</a>
 				
 			</div>
 			
@@ -313,47 +535,47 @@ Below is your unique URL for voting system.</div>
 	
 		<div class="row text-left hidden-xs" style="width: 80%; margin: 0 auto;">
 			<div class="col-sm-4">
-					<a href="about-us.php" class="about-active">ABOUT US</a><br>
-					<a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><br>
-					<a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
-					<a href="registration-form.php" class="license-active">REGISTER NOW</a><br>
-					<a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><br>
+					<a href="about-us.html" class="about-active">ABOUT US</a><br>
+					<a href="wsp.html" class="product-active">WHO SHOULD PARTICIPATE</a><br>
+					<a href="wsyk.html" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
+					<a href="registration-form.html" class="license-active">REGISTER NOW</a><br>
+					<a href="fees.html" class="media-active">FEES AND INCLUSIONS</a><br>
 			</div>
 			<div class="col-sm-4">
-				<a href="rules-and-regulation.php" class="process-active">RULES & REGULATION</a><br>
-					<a href="what-you-win.php" class="contact-active">WHAT YOU WIN</a><br>
-				<a href="leader-board.php" class="supersox-active">LEADER BOARD</a><br>
-				<a href="csr-partners.php" class="career-active">CSR PARTNERSHIP</a><br>
+				<a href="rules-and-regulation.html" class="process-active">RULES & REGULATION</a><br>
+					<a href="what-you-win.html" class="contact-active">WHAT YOU WIN</a><br>
+				<a href="leader-board.html" class="supersox-active">LEADER BOARD</a><br>
+				<a href="csr-partners.html" class="career-active">CSR PARTNERSHIP</a><br>
 				
 			</div>
 			<div class="col-sm-4">
 			
-				<a href="our_sponser.php" class="career-active">OUR SPONSORS</a><br>	
-				<a href="our-partners.php" class="career-active">OUR PARTNERS</a><br>
-				<a href="contact-us.php" class="career-active">CONTACT US</a><br>	
-				<a href="faq.php" class="career-active">FAQ'S</a><br>
+				<a href="our_sponser.html" class="career-active">OUR SPONSORS</a><br>	
+				<a href="our-partners.html" class="career-active">OUR PARTNERS</a><br>
+				<a href="contact-us.html" class="career-active">CONTACT US</a><br>	
+				<a href="faq.html" class="career-active">FAQ'S</a><br>
 			</div>
 		</div> 
 		
 		
 		<div class="row text-left visible-xs mobile-footer" style="width: 100%; margin: 0 auto;">
 			<div class="col-xs-6">
-					<a href="about-us.php" class="about-active">ABOUT US</a><br>
-					<a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><br>
-					<a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
-					<a href="registration-form.php" class="license-active">REGISTER NOW</a><br>
-					<a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><br>
-					<a href="rules-and-regulation.php" class="process-active">RULES & REGULATION</a><br>
-					<a href="what-you-win.php" class="contact-active">WHAT YOU WIN</a><br>
+					<a href="about-us.html" class="about-active">ABOUT US</a><br>
+					<a href="wsp.html" class="product-active">WHO SHOULD PARTICIPATE</a><br>
+					<a href="wsyk.html" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
+					<a href="registration-form.html" class="license-active">REGISTER NOW</a><br>
+					<a href="fees.html" class="media-active">FEES AND INCLUSIONS</a><br>
+					<a href="rules-and-regulation.html" class="process-active">RULES & REGULATION</a><br>
+					<a href="what-you-win.html" class="contact-active">WHAT YOU WIN</a><br>
 			</div>
 			<div class="col-xs-5 col-xs-offset-1">
 				
-				<a href="leader-board.php" class="supersox-active">LEADER BOARD</a><br>
-				<a href="csr-partners.php" class="career-active">CSR PARTNERSHIP</a><br>
-				<a href="our_sponser.php" class="career-active">OUR SPONSORS</a><br>	
-				<a href="our-partners.php" class="career-active">OUR PARTNERS</a><br>
-				<a href="contact-us.php" class="career-active">CONTACT US</a><br>	
-				<a href="faq.php" class="career-active">FAQ'S</a><br>
+				<a href="leader-board.html" class="supersox-active">LEADER BOARD</a><br>
+				<a href="csr-partners.html" class="career-active">CSR PARTNERSHIP</a><br>
+				<a href="our_sponser.html" class="career-active">OUR SPONSORS</a><br>	
+				<a href="our-partners.html" class="career-active">OUR PARTNERS</a><br>
+				<a href="contact-us.html" class="career-active">CONTACT US</a><br>	
+				<a href="faq.html" class="career-active">FAQ'S</a><br>
 			</div>
 		</div>
 		
@@ -406,6 +628,46 @@ Below is your unique URL for voting system.</div>
 <script src="js/vendor/classie2.js"></script>
 
 <script src="js/modernizr.custom2.js"></script>
+		<script src="js/vendor/classie2.js"></script>
+		<script>
+			var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btni-click button' ) ),
+				buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btni-8g' ) ),
+				totalButtons7Click = buttons7Click.length,
+				totalButtons9Click = buttons9Click.length;
+
+			buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+			buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+			function activate() {
+				var self = this, activatedClass = 'btni-activated';
+
+				if( classie.has( this, 'btni-7h' ) ) {
+					// if it is the first of the two btni-7h then activatedClass = 'btni-error';
+					// if it is the second then activatedClass = 'btni-success'
+					activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btni-error' : 'btni-success';
+				}
+				else if( classie.has( this, 'btni-8g' ) ) {
+					// if it is the first of the two btni-8g then activatedClass = 'btni-success3d';
+					// if it is the second then activatedClass = 'btni-error3d'
+					activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btni-success3d' : 'btni-error3d';
+				}
+
+				if( !classie.has( this, activatedClass ) ) {
+					classie.add( this, activatedClass );
+					setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+				}
+			}
+
+			document.querySelector( '.btni-7i' ).addEventListener( 'click', function() {
+				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+			}, false );
+		</script>
+		
+		<script>
+              $(window).load(function(){
+              	new WOW().init();
+              });
+              </script>
 	<!-- End Include JS File -->
 	
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

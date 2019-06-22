@@ -53,27 +53,25 @@
 		<style>
 /* General button style (reset) */
 .btni {
-	border: none;
-	font-family: inherit;
+	border: 1px;
+	font-family: 'ceragr-bolduploaded_file';
 	font-size: inherit;
-	color: inherit;
-	background: none;
+	color: #ffffff;
+	background-color: #ff3369;
 	cursor: pointer;
-	padding: 25px 80px;
+	padding: 15px 20px 15px 20px;
 	display: inline-block;
-	margin-bottom: 50px;
+/*	margin-bottom: 50px;*/
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	font-weight: 700;
 	outline: none;
-	position: relative;
+	position: fixed; left: 50%; margin-left: -100px; bottom: 60px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.btni:hover{
-background: #fc5979;
- }
+
 
 /* Filled star */
 .icon-truck:before {
@@ -81,13 +79,17 @@ background: #fc5979;
 }
 /*====================================================================================================================*/
 /* Button 7 */
-.btni-7 {
-	background-color: #ff3369;
-	color: #ffffff;
-	border: 1px;
-	letter-spacing: 2px;
+.btni-71 {
 	padding: 15px 20px 15px 20px;
-	font-family: 'ceragr-bolduploaded_file';
+    background-color: #ff3369;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'ceragr-bolduploaded_file';
+    border: 1px;
+    position: fixed;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 60px;
 	
 }
 
@@ -107,15 +109,15 @@ background: #fc5979;
 }
 
 .btni-7a.btni-activated {
-	-webkit-animation: fadeOutText 1s;
-	-moz-animation: fadeOutText 1s;
-	animation: fadeOutText 1s;
+	-webkit-animation: fadeOutText 0.5s;
+	-moz-animation: fadeOutText 0.5s;
+	animation: fadeOutText 0.5s;
 }
 
 .btni-7a.btni-activated:before {
-	-webkit-animation: moveToRight 1s;
-	-moz-animation: moveToRight 1s;
-	animation: moveToRight 1s;
+	-webkit-animation: moveToRight 0.5s;
+	-moz-animation: moveToRight 0.5s;
+	animation: moveToRight 0.5s;
 }
 
 @-webkit-keyframes fadeOutText {
@@ -163,9 +165,14 @@ background: #fc5979;
 	100% { transform: translateX(0%); }
 }
 
+.logo-container{
+		z-index: auto;
+	}
+
 </style>
 	</head>
-	<body>
+	<body style="overflow: hidden;">
+    
 		<div id="st-container" class="st-container">
 		
 			<!--[if lt IE 8]>
@@ -200,61 +207,61 @@ background: #fc5979;
 
 <nav class="st-menu st-effect-1" id="sidebar-nav">
 
-	<div class="icon icon-lab" style="color: #ffffff; font-size: 30px; margin-left:10px; margin-bottom:20px; font-family: 'ceragr-blackuploaded_file';"><a href="index.php"><img src="img/Logo.png"></a> <span id="hide" style="cursor:pointer; position: absolute; margin-top: 8px; right: 135px;"><img src="img/back-nav-arrow.png"> </span></div>
+	<div class="icon icon-lab" style="color: #ffffff; font-size: 30px; margin-left:10px; margin-bottom:20px; font-family: 'ceragr-blackuploaded_file';"><a href="index.html"><img src="img/Logo.png"></a> <span id="hide" style="cursor:pointer; position: absolute; margin-top: 8px; right: 135px;"><img src="img/back-nav-arrow.png"> </span></div>
 
 	<ul>
 	
-		<li><a class="icon icon-data" href="about-us.php">
+		<li><a class="icon icon-data" href="about-us.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>A</span>BOUT <span>U</span>S</span>
 			</a></li>
 		
-		<li><a class="icon icon-data" href="wsp.php">
+		<li><a class="icon icon-data" href="wsp.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>W</span>HO <span>S</span>HOULD <span>P</span>ARTICIPATE</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="wsyk.php">
+			<li><a class="icon icon-data" href="wsyk.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>W</span>HAT <span>Y</span>OU <span>S</span>HOULD</span><span> K</span>NOW
 			</a></li>
 			
-			<li><a class="icon icon-data" href="registration-form.php">
+			<li><a class="icon icon-data" href="registration-form.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>R</span>EGISTER NOW</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="fees.php">
+		<li><a class="icon icon-data" href="fees.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span">F</span>EES <span>A</span>ND<span> I</span>NCLUSIONS</span>
 			</a></li>
 	
-		<li><a class="icon icon-data" href="rules-and-regulation.php">
+		<li><a class="icon icon-data" href="rules-and-regulation.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>R</span>ULES <span>A</span>ND <span>R</span>EGULATIONS</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="what-you-win.php">
+			<li><a class="icon icon-data" href="what-you-win.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>WHAT</span> YOU <span>W</span>IN</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="leader-board.php">
+			<li><a class="icon icon-data" href="leader-board.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>L</span>EADER <span>B</span>OARD</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="csr-partners.php">
+		<li><a class="icon icon-data" href="csr-partners.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>C</span>SR <span>P</span>ARTNERSHIP</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="our_sponser.php">
+		<li><a class="icon icon-data" href="our_sponser.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>O</span>UR <span>S</span>PONSORS</span>
 			</a></li>
 			
-			<li><a class="icon icon-data" href="our-partners.php">
+			<li><a class="icon icon-data" href="our-partners.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>O</span>UR <span>P</span>ARTNERS</span>
 			</a></li>
 			
 			
 			
-			<li><a class="icon icon-data" href="contact-us.php">
+			<li><a class="icon icon-data" href="contact-us.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>C</span>ONTACT <span>U</span>S</span>
 			</a></li>
 			
-		<li><a class="icon icon-data" href="faq.php">
+		<li><a class="icon icon-data" href="faq.html">
 				<span class="anim-cover"><span class="anim-icon"><i class="fa fa-car" style="color: #FCCADB;"></i> &nbsp; |</span> </span><span class="nav-text"><span>FAQ'S</span></span>
 			</a></li>
 	</ul>
@@ -272,10 +279,10 @@ background: #fc5979;
 </nav>
 
 			
-			<div class="st-content" style="background-color: #ffffff;">
+			<div class="st-content">
 				<div class="st-content-inner">
 					<style>
-	.social-header-in{
+.social-header-in{
 		position: absolute;
     top: 14px;
     right: 8px;
@@ -289,7 +296,6 @@ background: #fc5979;
    
    @keyframes swingi { 20% { -webkit-transform: rotate3d(0, 0, 1, 15deg); transform: rotate3d(0, 0, 1, 15deg); } 40% { -webkit-transform: rotate3d(0, 0, 1, -10deg); transform: rotate3d(0, 0, 1, -10deg); } 60% { -webkit-transform: rotate3d(0, 0, 1, 5deg); transform: rotate3d(0, 0, 1, 5deg); } 80% { -webkit-transform: rotate3d(0, 0, 1, -5deg); transform: rotate3d(0, 0, 1, -5deg); } to { -webkit-transform: rotate3d(0, 0, 1, 0deg); transform: rotate3d(0, 0, 1, 0deg); } }
 </style>
-
 <div class="container-fluid logo-container">
 	<div class="outer-valign-container">
 		<div class="inner-valign-container">
@@ -297,21 +303,20 @@ background: #fc5979;
 			<div class="logo-inner-container">
 				<div class="logo">
 				
-					<a href="index.php"> <span style="color: #ffffff;font-family: 'ceragr-blackuploaded_file';"><img src="img/Logo.png"></span></a>
+					<a href="index.html"> <span style="color: #ffffff;font-family: 'ceragr-blackuploaded_file';"><img src="img/Logo.png"></span></a>
 					<div id="st-trigger-effects">
 						<button data-effect="st-effect-1" class="btn-hamb" style="color: #ffffff;"><img src="img/hamburger.png" style="width: 60%;"> </button>					
 					</div>
 					
 				</div>
-				 <div class="social-header-in hidden-xs">
+					  <div class="social-header-in hidden-xs">
 		<a href="https://www.instagram.com/times_womens_drive/" target="_blank"><i class="fa fa-instagram" style="color: #ffffff; font-size:20px;"></i></a> <a href="https://www.facebook.com/TimesWomensDrive" target="_blank"> <i class="fa fa-facebook" style="color: #ffffff; font-size: 20px;"></i></a> <i class="fa fa-youtube-play" style="color: #ffffff; font-size:20px; padding-right: 50px;"></i>
 	</div>
 				 <div class="dropdown hidden-xs">
-				
-    <button class="btn-primary-tweet dropdown-toggle animated infinite pulse" type="button" data-toggle="dropdown"><i class="fa fa-twitter" style="color: #ffffff; font-size: 20px;"></i></button>
+			
+    <button class="btn-primary-tweet dropdown-toggle animated infinite pulse" type="button" data-toggle="dropdown" style="position: absolute; top: 0; right: 0;"><i class="fa fa-twitter" style="color: #ffffff; font-size: 20px;"></i></button>
     <ul class="dropdown-menu">
-      <li><div class="twiter-panel hidden-xs">
-      
+      <li><div class="twiter-panel">
 				<a class="twitter-timeline" href="https://twitter.com/TimesWomenDrive" data-widget-id="687510611542949888"></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div></li>
       
@@ -337,238 +342,158 @@ background: #fc5979;
 	</div>
 </div>
 </div>
-					<div class="logo-space-top"></div>
+					<div class="logo-space-top-1"></div>
 <!--==========================================================================
 	Body Start
 	========================================================================== -->
-		<div class="container-fluid" style="background-color: #fc5979; padding-bottom: 20px; padding-top: 50px;">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-					<div class="about-heading"><span class="about-nav-text"><span style="font-weight: bolder;">A</span>BOUT <span style="font-weight: bolder;">U</span>S</span></div>
+					<div class="outer-valign-container">
+						<div class="inner-valign-container">
+						<div id="section-one">
+						<div class="main-section-wrapper">
+							<div class="home-text-wrapper-1">
+								<span class="constant-text-after wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">#</span><P class="constant-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s" style="margin-bottom: 0px;">
+									 FOR THE LOVE OF
+								</P>
+								
+								<p class="type-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.8s">memories that drive you.</p>
+<p class="type-text-second wow fadeIn" data-wow-duration="1s" data-wow-delay="3.2s">Unforgettable, aren’t they?</p>
+
+								<img src="img/home-icons/1-01.svg" class="img-responsive sec-one-icon-1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"/>
+    
+    <img src="img/home-icons/4-01.svg" class="img-responsive sec-one-icon-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s" />
+    	
+    	<img src="img/home-icons/5-01.svg" class="img-responsive sec-one-icon-5 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s" />
+   
+   	<img src="img/home-icons/6-01.svg" class="img-responsive sec-one-icon-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.6s" />
+    	
+							
+								
+								
+							</div>
+							<img src="img/home-icons/2-01.svg" class="img-responsive sec-one-icon-2 wow fadeIn" />
+   
+   	<img src="img/home-icons/3-01.svg" class="img-responsive sec-one-icon-3 wow fadeIn" />
+   
+   	<img src="img/home-icons/7-01.svg" class="img-responsive sec-one-icon-7 wow fadeIn" />
+   
+   	<img src="img/home-icons/8-01.svg" class="img-responsive sec-one-icon-8 wow fadeIn" />
+						</div>
+							
+							</div>
+							<div id="section-two" style="display: none;">
+								<div class="main-section-wrapper">
+							<div class="home-text-wrapper-2">
+							<img src="img/home-icons/Ballon-01.svg" class="sec-one-icon-9 wow swing" data-wow-duration="10s" data-wow-delay="0.4s">
+								<span class="constant-text-after wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">#</span><P class="constant-text wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s" style="margin-bottom: 0px;">
+									 FOR THE LOVE OF
+								</P>
+								
+								<p class="type-text wow fadeIn" data-wow-duration="1s" data-wow-delay="1.6s">hair that flies at 100 KPH.</p>
+<p class="type-text-second wow fadeIn" data-wow-duration="3s" data-wow-delay="2s">Irresistible, isnt it?</p>
+
+
+								
+    	<img src="img/home-icons/10-01.svg" class="img-responsive sec-one-icon-10">
+    	<img src="img/home-icons/11.svg" class="img-responsive sec-one-icon-11">
+							
+								
+							
+							</div>
+							
+						</div>
+							<div class="road"></div>
+							</div>
+							
+							<div id="section-three" style="display: none;">
+								<div class="main-section-wrapper">
+							<div class="home-text-wrapper-3">
 					
-					<div class="about-divider"></div>
+								<span class="constant-text-after wow fadeIn" data-wow-duration="1s" data-wow-delay="3.2s">#</span><P class="constant-text wow fadeIn" data-wow-duration="1s" data-wow-delay="3.6s" style="margin-bottom: 0px;">
+									 FOR THE LOVE OF
+								</P>
+								
+								<p class="type-text wow fadeIn" data-wow-duration="1s" data-wow-delay="4s">music that only the sea plays.</p>
+<p class="type-text-second wow fadeIn" data-wow-duration="1s" data-wow-delay="4.4s">Beautiful, is it not?</p>
+
+<img src="img/home-icons/12.svg" class="sec-one-icon-12 wow rotateIn" data-wow-duration="1s" data-wow-delay="2s">
+
+<img src="img/home-icons/13-01.svg" class="sec-one-icon-13 wow rotateIn" data-wow-duration="1s" data-wow-delay="2.4s">
+
+<img src="img/home-icons/14-01.svg" class="sec-one-icon-14 wow rotateIn" data-wow-duration="1s" data-wow-delay="2.8s">
+
+							</div>
+							<img src="img/home-icons/15.svg" class="sec-one-icon-15 wow rotateIn" data-wow-duration="1s" data-wow-delay="0.4s">
+							<img src="img/home-icons/16-01.svg" class="sec-one-icon-16 wow rotateIn" data-wow-duration="1s" data-wow-delay="0.8s">
+							<img src="img/home-icons/17-01.svg" class="sec-one-icon-17 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.2s">
+							<img src="img/home-icons/Untitled-3-01.svg" class="img-responsive sec-one-icon-18 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+							
+						</div>
+							
+							</div>
+							
+							<div id="section-four" style="display: none;">
+								<div class="main-section-wrapper">
+							<div class="home-text-wrapper">
+					<img src="img/home-icons/20-01-01.svg" class="sec-one-icon-20 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+								<span class="constant-text-after wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">#</span><P class="constant-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s" style="margin-bottom: 0px;">
+									 FOR THE LOVE OF
+								</P>
+								
+								<p class="type-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.8s">a journey full of adventure, fun and friendship.</p>
+<p class="type-text-second wow fadeIn" data-wow-duration="3s" data-wow-delay="3.2s">You are ready, Right?</p>
+
 					
-				</div>
-			</div>
-		</div>
-		<div class="about-img-main">
-		<p class="about-img-wrap wow fadeInUp" data-wow-duration="1s">
-						<span style="font-size: 18px;">For the past six years, we have been driven by our love for TSD rallies. The journey that commenced in 2009 has only grown in strength and vigour.</span>
-					</p>
-	<p class="about-img-wrap-inner wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-						It all started with 150 cars from Mumbai, driven exclusively by women all the way to Lavasa. In 2011, we integrated the city of Pune – bringing the tally to 2000 women across both cities, and even endeavouring and winning the Guinness Book of World Records in 2014 for the largest number of women participating in a motorsport event.
-					</p>
-	<p class="about-img-wrap-inner wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-					But as Mia Hamm had once said, "Celebrate what you have accomplished, but raise the bar a little higher each time you succeed." Well, it stands true for us too – we have been pushing ourselves inch-by-inch for the past six years and now, after becoming the world champions, it’s time for us to change the benchmark, go the distance!
-					</p>
-	<p class="about-img-wrap-inner-different wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-						Welcome to the 7th edition of the Women’s Drive, this year Times Women’s Drive introduces an incipient city, Bangalore and challenges all you super ladies to take on one of the toughest TSD rallies in the world. We drive to GOA! 
-					</p>
-	<p class="about-img-wrap-inner-different wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-						It’s not a drive for the faint hearted but the rewards are far more compelling. It’s a stamp of achievement for you, which will never ever fade away.
-					</p>
+								
+							</div>
+							
+							
+						</div>
+							<img src="img/home-icons/19.svg" class="sec-one-icon-19 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+							<img src="img/home-icons/21-01.svg" class="sec-one-icon-21 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+							<img src="img/home-icons/22-01.svg" class="sec-one-icon-22 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.6s">
+							</div>
+							
+							<div id="section-five" style="display: none;">
+								<div class="main-section-wrapper">
+							<div class="home-text-wrapper-4">
+					
+								<span class="constant-text-after wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">#</span><P class="constant-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.2s" style="margin-bottom: 0px;">
+									 FOR THE LOVE OF
+								</P>
+								
+								<p class="type-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2.4s">fulfilling dreams.</p>
+<p class="type-text-second wow fadeIn" data-wow-duration="1s" data-wow-delay="2.6s">Feels great, does it not?</p>
+
+					
+							</div>
+							<img src="img/home-icons/23-01.svg" class="sec-one-icon-23 wow fadeInDown" data-wow-duration="1s" data-wow-delay="2.6s">
+							<img src="img/home-icons/24-01.svg" class="sec-one-icon-24 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+							<img src="img/home-icons/25-01.svg" class="sec-one-icon-25 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+							<img src="img/home-icons/26-01.svg" class="sec-one-icon-26 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+							<img src="img/home-icons/27-01.svg" class="sec-one-icon-27 wow fadeInDown" data-wow-duration="1s" data-wow-delay="2.8s">
+							<img src="img/home-icons/28-01.svg" class="sec-one-icon-28 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.2s">
+							<img src="img/home-icons/28-01.svg" class="sec-one-icon-29 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.4s">
+							<img src="img/home-icons/28-01.svg" class="sec-one-icon-30 wow rotateIn" data-wow-duration="1s" data-wow-delay="1.6s">
+							<img src="img/home-icons/28-01.svg" class="sec-one-icon-31 wow rotateIn" data-wow-duration="1.8s">
+						</div>
+							
+							</div>
+						</div>
 					</div>
-					
-		<!--			
-		<div class="container-fluid icon-divider">
-			<div class="row icon-divider-row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column1">
-					<img src="img/about-invite.png">
-					<p class="icon-divider-para">We invite women to register for the drive</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column2">
-				<img src="img/about-voting.png">
-					<p class="icon-divider-para">500 participants, through a voting system, will be invited to participate this one of it’s kind rally</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column3">
-					<img src="img/about-winner.png">
-					<p class="icon-divider-para">3 will be selected as winners. </p>
-				</div>
-			</div>
-		</div>-->
-		
-	<!--	<div class="container-fluid icon-divider-res" style="width: 90%;">
-			<div class="row icon-divider-row-res">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column1-res">
-					<p class="icon-divider-para1">We invite women to register for the drive</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column2-res">
 				
-					<p class="icon-divider-para2">500 participants, through a voting system, will be invited to participate this one of it’s kind rally</p>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 icon-divider-column3-res">
-				
-					<p class="icon-divider-para3">3 will be selected as winners. </p>
-				</div>
-			</div>
-		</div>-->
-		
-		<div class="container-fluid about-img-container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 about-img hidden-xs wow fadeInUp" data-wow-duration="3s" data-wow-delay="2s">
-					
-	<div class="view fourth-effect">
-		<img src="img/products/Product_1.jpg" class="img-responsive style-img"/>
-		<div class="mask"></div>
-	</div>
-
-				<img src="img/1.jpg" class="img-responsive">
-					
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 about-img wow fadeInUp" data-wow-duration="3s" data-wow-delay="2s">
-				<img src="img/2.jpg" class="img-responsive">
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="container-fluid wow slideInUp" data-wow-duration="1s" data-wow-delay="3s">
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-1 overlay-section">
-					<h2 class="overlay-head">A sneak peak into our gallery</h2>
-					<a href="image-gallary.php"> <input class="button-style" type="button" value="PREVIOUS EDITIONS"></input></a>
-					<p class="about-overlay-text wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">The drive upgrades in every aspect, flagging off close to International Women’s Day this year, we’re adding satellite tracking for all the participants’ cars, mapping their routes and speed.</p>
-					
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="container-fluid">
-			<div class="row" style="width: 60%; margin: 0 auto; padding-bottom: 50px;">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 guiness-img wow fadeInLeft" data-wow-duration="1s" data-wow-delay="4s">
-					<img src="img/Guiness.jpg" class="img-responsive">
-				</div>
-				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 limca-img wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">
-					<img src="img/Limca-Book.jpg" class="img-responsive">
-				</div>
-				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 inma-img wow fadeInRight" data-wow-duration="1s" data-wow-delay="4s">
-					<img src="img/INMA.jpg" class="img-responsive">
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="gbor-para wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-			Having been felicitated by the Guinness Book of World Records, the Limca Book of Records, the INMA Awards, this year, yet again we create an experience like no other for the participants.
-		</div>
-		
-
-	<div class="about-last-line">
-	<div class="review wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-			SO GET CHARGED, WE’RE LOOKING FORWARD TO YOUR REVVING ENGINES!
-		</div>
-		<div class="review2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-			What are you waiting for? Click the registration button NOW!
-		</div>
+			
 		<div class="about-us-btn" id="btni-click">
-		<a href="registration-form.php">  
-		<button style="width: 200px;" class="btni btni-7 btni-7a icon-truck">REGISTER NOW</button>		</a>				
+		<a href="registration-form.html">  
+		<button style="width: 200px;" class="btni btni-71 btni-7a icon-truck">REGISTER NOW</button>		</a>				
 			</div>
-	</div>
 <!--==========================================================================
 	End Body
-	========================================================================== -->						
-	
+	========================================================================== -->									<footer class="footer-container">
+						
 
-
-<!-- footer starts here -->
-
-<!--<style>
-	.size{font-size:15px; color:white; padding: 10px; margin-top: 20px; margin-bottom: 15px;}
-	
-	.size:hover{color: #FFCC33;}
-</style>-->
-		<footer class="full-length-footer" id="footer" style="width:100%; float: left;">
-			<!--<div class="footer-icon" style="width: 100%; float: left; text-align: center;">
-
-	<div class="col-sm-12 col-xs-12 text-center">
-				<a href="https://www.instagram.com/times_womens_drive/" target="blank"><img src="img/instagram.png"></a><a href="https://twitter.com/TimesWomenDrive" target="blank"><img src="img/twitter.png"></a><a href="https://www.facebook.com/TimesWomensDrive" target="blank"><img src="img/facebook.png"></a><img src="img/youtube.png">
-			</div>			
-			</div>-->
-			
-			
-			
-			
-			<div class="footer-links" style="width:100%;">
-			
-				<a href="about-us.php" class="about-active">ABOUT US</a> <a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><a href="registration-form.php" class="license-active">REGISTER NOW</a><a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><a href="rules-and-regulation.php" class="career-active">RULES & REGULATIONS</a><a href="what-you-win.php" class="process-active">WHAT YOU WIN</a><a href="leader-board.php" class="contact-active">LEADER BOARD</a><a href="csr-partners.php" class="supersox-active">CSR PARTNERSHIP</a><a href="our_sponser.php" class="supersox-active">OUR SPONSORS</a><a href="our-partners.php" class="supersox-active">OUR PARTNERS</a><a href="contact-us.php" class="supersox-active">CONTACT US</a><a href="faq.php" class="supersox-active">FAQ'S</a>
-				
-			</div>
-			
-			<div class="footer-text">
-			
-				&copy; Copyright 2015 TWD. All Rights Reserved |  Crafted by <span class="toggle-bold">Togglehead</span>
-				
-			</div>
-			
-			
-		</footer>
-		
-	<footer class="container-fluid small-length-footer" id="footer1">
-	
-		<!--<div class="row">
-			<div class="col-sm-12 col-xs-12 footer-icon">
-				<a href="https://www.instagram.com/times_womens_drive/" target="blank"><img src="img/instagram.png"></a><a href="https://twitter.com/TimesWomenDrive" target="blank"><img src="img/twitter.png"></a><a href="https://www.facebook.com/TimesWomensDrive" target="blank"><img src="img/facebook.png"></a><img src="img/youtube.png">
-			</div>
-		</div>-->
-	
-		<div class="row text-left hidden-xs" style="width: 80%; margin: 0 auto;">
-			<div class="col-sm-4">
-					<a href="about-us.php" class="about-active">ABOUT US</a><br>
-					<a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><br>
-					<a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
-					<a href="registration-form.php" class="license-active">REGISTER NOW</a><br>
-					<a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><br>
-			</div>
-			<div class="col-sm-4">
-				<a href="rules-and-regulation.php" class="process-active">RULES & REGULATION</a><br>
-					<a href="what-you-win.php" class="contact-active">WHAT YOU WIN</a><br>
-				<a href="leader-board.php" class="supersox-active">LEADER BOARD</a><br>
-				<a href="csr-partners.php" class="career-active">CSR PARTNERSHIP</a><br>
-				
-			</div>
-			<div class="col-sm-4">
-			
-				<a href="our_sponser.php" class="career-active">OUR SPONSORS</a><br>	
-				<a href="our-partners.php" class="career-active">OUR PARTNERS</a><br>
-				<a href="contact-us.php" class="career-active">CONTACT US</a><br>	
-				<a href="faq.php" class="career-active">FAQ'S</a><br>
-			</div>
-		</div> 
-		
-		
-		<div class="row text-left visible-xs mobile-footer" style="width: 100%; margin: 0 auto;">
-			<div class="col-xs-6">
-					<a href="about-us.php" class="about-active">ABOUT US</a><br>
-					<a href="wsp.php" class="product-active">WHO SHOULD PARTICIPATE</a><br>
-					<a href="wsyk.php" class="quality-active">WHAT YOU SHOULD KNOW</a><br>
-					<a href="registration-form.php" class="license-active">REGISTER NOW</a><br>
-					<a href="fees.php" class="media-active">FEES AND INCLUSIONS</a><br>
-					<a href="rules-and-regulation.php" class="process-active">RULES & REGULATION</a><br>
-					<a href="what-you-win.php" class="contact-active">WHAT YOU WIN</a><br>
-			</div>
-			<div class="col-xs-5 col-xs-offset-1">
-				
-				<a href="leader-board.php" class="supersox-active">LEADER BOARD</a><br>
-				<a href="csr-partners.php" class="career-active">CSR PARTNERSHIP</a><br>
-				<a href="our_sponser.php" class="career-active">OUR SPONSORS</a><br>	
-				<a href="our-partners.php" class="career-active">OUR PARTNERS</a><br>
-				<a href="contact-us.php" class="career-active">CONTACT US</a><br>	
-				<a href="faq.php" class="career-active">FAQ'S</a><br>
-			</div>
-		</div>
-		
-		
-		<div class="row">
-			<div class="col-sm12 col-xs-12 footer-text" style="margin-top: 15px;">
-				© Copyright 2015 TWD. All Rights Reserved |  Crafted by <span class="toggle-bold">Togglehead</span>
-			</div>
-		</div>
-	</footer>
-    			
+<p style="text-align: right; margin-right: 20px; margin-bottom:0px; color: #ffffff; font-size: 10px; font-family: 'ceragr-mediumuploaded_file'; letter-spacing: 2px;">Created By</p>
+<P style="margin-right: 20px; color: #ffffff; font-size: 15px; font-family: 'ceragr-bolduploaded_file';">THE TIMES OF INDIA</P>
+					</footer>
 				</div>
 			</div>
 
@@ -610,7 +535,11 @@ background: #fc5979;
 <script src="js/vendor/classie2.js"></script>
 
 <script src="js/modernizr.custom2.js"></script>
-		<script src="js/vendor/classie2.js"></script>
+		 <script>
+              new WOW().init();
+              </script>
+              
+        <script src="js/vendor/classie2.js"></script>
 		<script>
 			var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btni-click button' ) ),
 				buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btni-8g' ) ),
@@ -644,12 +573,6 @@ background: #fc5979;
 				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
 			}, false );
 		</script>
-		
-		<script>
-              $(window).load(function(){
-              	new WOW().init();
-              });
-              </script>
 	<!-- End Include JS File -->
 	
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
